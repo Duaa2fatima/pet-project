@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
         integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
 <body>
@@ -74,107 +73,12 @@
         </p>
     </div>
     <!-- End -->
-
-    <!-- Slider -->
-    <section id="slider">
-        <div class="main-container">
-            <div class="slider-wrapper">
-                <button class="arrow prev" onclick="
-              document
-                .querySelector('.slider')
-                .scrollBy({ left: -window.innerWidth, behavior: 'smooth' })
-            ">
-                    ❮
-                </button>
-                <button class="arrow next" onclick="
-              document
-                .querySelector('.slider')
-                .scrollBy({ left: window.innerWidth, behavior: 'smooth' })
-            ">
-                    ❯
-                </button>
-
-                <div class="slider">
-                    <div class="slide" id="slide-1">
-                        <img src="./images/1.jpeg" alt="Slide 1" />
-                    </div>
-
-                    <div class="slide" id="slide-2">
-                        <img src="./images/2.jpeg" alt="Slide 2" />
-                    </div>
-
-                    <div class="slide" id="slide-3">
-                        <img src="./images/3.jpeg" alt="Slide 3" />
-                    </div>
-
-                    <div class="slide" id="slide-4">
-                        <img src="./images/4.jpeg" alt="Slide 4" />
-                    </div>
-                </div>
-
-                <div class="slider-nav">
-                    <a href="#slide-1"></a>
-                    <a href="#slide-2"></a>
-                    <a href="#slide-3"></a>
-                    <a href="#slide-4"></a>
-                    <a href="#slide-5"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End -->
-
-    <!-- About -->
-
-    <div class="about-company">
-        <div class="text">
-            <h1 style="margin-bottom: 20px;">The Journey</h1>
-            <p>NESTRO is a trusted provider of high-quality PET bottles, jars, and containers designed to meet the
-                diverse packaging needs of modern businesses. We serve industries ranging from food & beverages and
-                pharmaceuticals to cosmetics, chemicals, and household products.
-
-                At NESTRO, we believe packaging is more than just a container—it’s a vital part of product safety,
-                presentation, and brand identity. That’s why we focus on delivering durable, lightweight, and
-                precisely
-                engineered PET packaging solutions that meet industry standards and customer expectations.
-
-                Our product range includes a wide variety of sizes, shapes, and designs, with options for
-                customization
-                to suit your specific requirements. By combining quality materials, efficient manufacturing, and
-                strict
-                quality control, we ensure consistent performance and reliability in every product we supply.
-
-                Driven by a commitment to innovation, sustainability, and customer satisfaction, NESTRO aims to
-                build
-                long-term partnerships by providing dependable packaging solutions at competitive prices.
-                <br>
-                NESTRO – Reliable PET Packaging Solutions You Can Trust.
-            </p>
-        </div>
-        <div class="banner">
-            <img src="./images/about us.png" alt="">
-        </div>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Contact</h1>
+        <p>Get in touch with us for any inquiries, feedback, or orders.</p>
     </div>
 
-    <!-- End -->
-
-    <!-- Products Cards -->
-    <div class="section-header">
-        <h1>Categories</h1>
-    </div>
-    <div class="category-filter">
-        <button class="active_category">ALL</button>
-        <button>Bottle</button>
-        <button>Jar</button>
-    </div>
-    <div class="cards-container"></div>
-    <!-- End -->
-
-    <!-- Gallery -->
-    <div class="section-header">
-        <h1>Gallery</h1>
-    </div>
-    <div class="gallery-container"></div>
     <!-- End -->
 
     <!-- Feedback -->
@@ -244,47 +148,6 @@
     </div>
     <!-- End -->
 
-    <!-- Contact -->
-    <div class="section-header" data-aos="fade-up">
-        <h1>Contact</h1>
-    </div>
-
-    <section class="contact-section" data-aos="fade-up">
-        <div class="contact-info">
-            <p>
-                If you have any questions about our bottles or jars, feel free to get
-                in touch with us.
-            </p>
-            <p><strong>Address:</strong> 511, Suite # 202-203, Main Shahra-e-Faisal, near Lal Kothi (house), Karachi,
-                Pakistan</p>
-            <p><strong>Phone:</strong> +92 301 7565441</p>
-            <p><strong>Email:</strong> nestro@gmail.com</p>
-        </div>
-
-        <div class="contact-form-container">
-            <form action="#" method="post">
-                <label>Full Name</label><br />
-                <input type="text" name="name" placeholder="Enter your name" required />
-                <br /><br />
-
-                <label>Email Address</label><br />
-                <input type="email" name="email" placeholder="Enter your email" required />
-                <br /><br />
-
-                <label>Subject</label><br />
-                <input type="text" name="subject" placeholder="Subject" />
-                <br /><br />
-
-                <label>Message</label><br />
-                <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
-                <br /><br />
-
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-    <!-- End -->
-
     <!-- Footer -->
 
     <footer class="footer">
@@ -338,8 +201,6 @@
 
         </div>
     </footer>
-
-
 
 
     <script src="./js/script.js"></script>
