@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NESRO - Where pakaging needs perfection</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--Remix Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar-desktop">
+        <div class="logo">
+            <img src="./images/logo.png">
+            <p>NESTRO</p>
+        </div>
+        <div class="items">
+            <ul>
+                <li>
+                    <a style="text-decoration: none; color: black" href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a style="text-decoration: none; color: black" href="./about.html">About</a>
+                </li>
+                <li class="dropdown">
+                    <a style="text-decoration: none; color: black" href="./categories.html">Categories &#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./jars.html">Jars</a></li>
+                        <li><a href="./bottles.html">Bottles</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a style="text-decoration: none; color: black" href="./gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a style="text-decoration: none; color: black" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+    </div>
+    <div class="navbar-mobile hide">
+        <p>
+            <a style="text-decoration: none; color: black" href="./index.html">Home</a>
+        </p>
+        <p>
+            <a style="text-decoration: none; color: black" href="./about.html">About</a>
+        </p>
+        <p class="mobile-dropdown">
+            <a style="text-decoration: none; color: black" href="./categories.html">Categories &#9662;</a>
+            <span class="mobile-dropdown-items hide">
+                <a href="./jars.html">Jars</a><br />
+                <a href="./bottles.html">Bottles</a>
+            </span>
+        </p>
+        <p>
+            <a style="text-decoration: none; color: black" href="./gallery.html">Gallery</a>
+        </p>
+        <p>
+            <a style="text-decoration: none; color: black" href="./contact.html">Contact</a>
+        </p>
+    </div>
+    <!-- End -->
+
+    <!-- Slider -->
+    <section id="slider">
+        <div class="main-container">
+            <div class="slider-wrapper">
+                <button class="arrow prev" onclick="
+              document
+                .querySelector('.slider')
+                .scrollBy({ left: -window.innerWidth, behavior: 'smooth' })
+            ">
+                    ❮
+                </button>
+                <button class="arrow next" onclick="
+              document
+                .querySelector('.slider')
+                .scrollBy({ left: window.innerWidth, behavior: 'smooth' })
+            ">
+                    ❯
+                </button>
+
+                <div class="slider">
+                    <div class="slide" id="slide-1">
+                        <img src="./images/1.jpeg" alt="Slide 1" />
+                    </div>
+
+                    <div class="slide" id="slide-2">
+                        <img src="./images/2.jpeg" alt="Slide 2" />
+                    </div>
+
+                    <div class="slide" id="slide-3">
+                        <img src="./images/3.jpeg" alt="Slide 3" />
+                    </div>
+
+                    <div class="slide" id="slide-4">
+                        <img src="./images/4.jpeg" alt="Slide 4" />
+                    </div>
+                </div>
+
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- About -->
+
+    <div class="about-company">
+        <div class="text">
+            <h1 style="margin-bottom: 20px;">The Journey</h1>
+            <p>PETBOT is a trusted manufacturer of high-quality plastic bottles and jars, delivering reliable packaging
+                solutions for diverse industries including food & beverage, pharmaceuticals, cosmetics, chemicals, and
+                household products. Built on a foundation of innovation, precision, and quality craftsmanship, PETBOT is
+                committed to providing durable, safe, and sustainable packaging that meets modern business needs.</p>
+        </div>
+        <div class="banner">
+            <img src="./images/about us.png" alt="">
+        </div>
+    </div>
+
+    <!-- End -->
+
+    <!-- Products Cards -->
+    <div class="section-header">
+        <h1>Categories</h1>
+    </div>
+    <div class="category-filter">
+        <button class="active_category">ALL</button>
+        <button>Bottle</button>
+        <button>Jar</button>
+    </div>
+    <div class="cards-container"></div>
+    <!-- End -->
+
+    <!-- Gallery -->
+    <div class="section-header">
+        <h1>Gallery</h1>
+    </div>
+    <div class="gallery-container"></div>
+    <!-- End -->
+
+    <!-- Feedback -->
+    <div class="section-header" data-aos="fade-up">
+        <h1>Feedback</h1>
+    </div>
+    <div class="feedback-container" data-aos="fade-up">
+        <div class="section-container">
+            <div class="feedback-item">
+                <h4>Ali Khan</h4>
+                <p><strong>Product:</strong> Plastic Bottle</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Very good quality bottle. Totally satisfied!</p>
+            </div>
+
+            <div class="feedback-item">
+                <h4>Ali Khan</h4>
+                <p><strong>Product:</strong> Plastic Bottle</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Very good quality bottle. Totally satisfied!</p>
+            </div>
+
+            <div class="feedback-item">
+                <h4>Ali Khan</h4>
+                <p><strong>Product:</strong> Plastic Bottle</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Very good quality bottle. Totally satisfied!</p>
+            </div>
+        </div>
+        <div class="form-container">
+            <form action="#" method="post">
+                <label for="name">Full Name</label><br />
+                <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                <br /><br />
+
+                <label for="email">Email Address</label><br />
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                <br /><br />
+
+                <label for="product">Product Category</label><br />
+                <select id="product" name="product">
+                    <option value>Select category</option>
+                    <option value="Bottle">Bottle</option>
+                    <option value="Jar">Jar</option>
+                </select>
+                <br /><br />
+
+                <label for="rating">Rating</label><br />
+                <select id="rating" name="rating">
+                    <option value>Select rating</option>
+                    <option value="5">★★★★★ Excellent</option>
+                    <option value="4">★★★★ Very Good</option>
+                    <option value="3">★★★ Good</option>
+                    <option value="2">★★ Average</option>
+                    <option value="1">★ Poor</option>
+                </select>
+                <br /><br />
+
+                <label for="message">Your Feedback</label><br />
+                <textarea id="message" name="message" rows="5" placeholder="Write your feedback here..."
+                    required></textarea>
+                <br /><br />
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Contact -->
+    <div class="section-header" data-aos="fade-up">
+        <h1>Contact</h1>
+    </div>
+
+    <section class="contact-section" data-aos="fade-up">
+        <div class="contact-info">
+            <p>
+                If you have any questions about our bottles or jars, feel free to get
+                in touch with us.
+            </p>
+            <p><strong>Address:</strong> 511, Suite # 202-203, Main Shahra-e-Faisal, near Lal Kothi (house), Karachi,
+                Pakistan</p>
+            <p><strong>Phone:</strong> +92 301 7565441</p>
+            <p><strong>Email:</strong> nestro@gmail.com</p>
+        </div>
+
+        <div class="contact-form-container">
+            <form action="#" method="post">
+                <label>Full Name</label><br />
+                <input type="text" name="name" placeholder="Enter your name" required />
+                <br /><br />
+
+                <label>Email Address</label><br />
+                <input type="email" name="email" placeholder="Enter your email" required />
+                <br /><br />
+
+                <label>Subject</label><br />
+                <input type="text" name="subject" placeholder="Subject" />
+                <br /><br />
+
+                <label>Message</label><br />
+                <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+                <br /><br />
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <!-- About / Brand -->
+            <div class="footer-about">
+                <h3>PETBOT</h3>
+                <p>
+                    Your one-stop shop for bottles, jars, and more. Quality products for
+                    everyday use.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>511, Suite # 202-203, Main Shahra-e-Faisal, near Lal Kothi (house), Karachi, Pakistan</p>
+                <p>Phone: +92 301 7565441</p>
+                <p>Email: nestro@gmail.com</p>
+            </div>
+            <div class="socials">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+        <hr />
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 PETBOT. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
