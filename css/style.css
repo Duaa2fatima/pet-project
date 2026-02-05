@@ -25,8 +25,12 @@
 }
 
 .navbar-desktop>.logo>img {
-    width: 45px;
-    filter: invert(1);
+    height: 50px;
+}
+
+.navbar-desktop>.logo {
+    display: flex;
+    align-items: center;
 }
 
 .navbar-desktop>.items>ul {
