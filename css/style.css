@@ -640,9 +640,9 @@ a {
 /* Footer */
 .footer {
     background: var(--bg);
-    /* dark gray-blue */
+    /* tan */
     color: black;
-    /* light gray text */
+    /* black */
     padding: 60px 20px;
     font-family: 'Segoe UI', sans-serif;
 }
@@ -717,7 +717,7 @@ a {
     height: 36px;
     line-height: 36px;
     text-align: center;
-    background: #1b3529;
+    background: #808080;
     color: #ffffff;
     border-radius: 50%;
     margin-right: 10px;
