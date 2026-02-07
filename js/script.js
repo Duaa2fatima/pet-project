@@ -116,6 +116,16 @@ fetch("./data/gallery.json")
 
 
 
-document.getElementById("myBtn").addEventListener("click", function () {
-  alert("Feedback submitted");
-});
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  alert("Feedback Submitted");
+})
+
+
+const contact = document.getElementById("contact");
+
+contact.addEventListener("submit", function (e) {
+  e.preventDefault(); // stops page reload
+
+  alert("Message Send");
+})

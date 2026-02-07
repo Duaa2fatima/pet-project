@@ -84,46 +84,43 @@
     <!-- End -->
 
     <!-- Contact -->
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
         <h1>Contact</h1>
     </div>
 
-    <section class="contact-section">
-
+    <section class="contact-section" data-aos="fade-up">
         <div class="contact-info">
-            <p>If you have any questions about our bottles or jars, feel
-                free to
-                get in touch with us.</p>
-            <p><strong>Address:</strong> 123 Bottle Street, Karachi,
+            <p>
+                If you have any questions about our bottles or jars, feel free to get
+                in touch with us.
+            </p>
+            <p><strong>Address:</strong> 511, Suite # 202-203, Main Shahra-e-Faisal, near Lal Kothi (house), Karachi,
                 Pakistan</p>
-            <p><strong>Phone:</strong> +92 300 1234567</p>
-            <p><strong>Email:</strong> info@bottleshop.com</p>
+            <p><strong>Phone:</strong> +92 301 7565441</p>
+            <p><strong>Email:</strong> nestro@gmail.com</p>
         </div>
 
         <div class="contact-form-container">
-            <form action="#" method="post">
+            <form id="contact">
+                <label>Full Name</label><br />
+                <input type="text" name="name" placeholder="Enter your name" required />
+                <br /><br />
 
-                <label>Full Name</label><br>
-                <input type="text" name="name" placeholder="Enter your name" required>
-                <br><br>
+                <label>Email Address</label><br />
+                <input type="email" name="email" placeholder="Enter your email" required />
+                <br /><br />
 
-                <label>Email Address</label><br>
-                <input type="email" name="email" placeholder="Enter your email" required>
-                <br><br>
+                <label>Subject</label><br />
+                <input type="text" name="subject" placeholder="Subject" />
+                <br /><br />
 
-                <label>Subject</label><br>
-                <input type="text" name="subject" placeholder="Subject">
-                <br><br>
-
-                <label>Message</label><br>
+                <label>Message</label><br />
                 <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
-                <br><br>
+                <br /><br />
 
-                <button type="submit">Send Message</button>
-
+                <button id="btn">Send Message</button>
             </form>
         </div>
-
     </section>
     <!-- End -->
 
