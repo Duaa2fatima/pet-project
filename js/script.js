@@ -112,3 +112,10 @@ fetch("./data/gallery.json")
       document.getElementsByClassName("gallery-container")[0].innerHTML = image;
     });
   });
+
+
+
+
+document.getElementById("myBtn").addEventListener("click", function () {
+  alert("Feedback submitted");
+});
