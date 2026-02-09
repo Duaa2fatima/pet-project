@@ -8,8 +8,8 @@
 }
 
 :root {
-    --bg: #D2B48C;
-    --btn-bg: #808080;
+    --bg: #CBDDE9;
+    --btn-bg: #2872A1;
     --heading: linear-gradient(gray, black);
 }
 
@@ -717,7 +717,7 @@ a {
     height: 36px;
     line-height: 36px;
     text-align: center;
-    background: #808080;
+    background: #2872A1;
     color: #ffffff;
     border-radius: 50%;
     margin-right: 10px;
