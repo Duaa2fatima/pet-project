@@ -595,14 +595,14 @@ a {
 
 .mission-vision>.mission {
     border: 1px solid lightgray;
-    box-shadow: 0 5px 15px #D2B48C;
+    box-shadow: 0 5px 15px #2872A1;
     width: 400px;
     padding: 65px;
 }
 
 .mission-vision>.vision {
     border: 1px solid lightgray;
-    box-shadow: 0 5px 15px #D2B48C;
+    box-shadow: 0 5px 15px #2872A1;
     width: 400px;
     padding: 65px;
 }
