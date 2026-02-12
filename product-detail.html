@@ -1,16 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NESTRO - Where packaging needs perfection</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/animataion.css">
-
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!--Remix Icon-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
         integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -75,27 +70,23 @@
         </p>
     </div>
     <!-- End -->
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>Categories</h1>
-        <p>Explore our diverse range of bottles and jars, carefully designed for every need.</p>
-    </div>
 
-    <!-- End -->
 
-    <!-- Products Cards -->
-    <div class="section-header">
-        <h1>Categories</h1>
-    </div>
-    <div class="category-filter">
-        <button class="active_category">ALL</button>
-        <button>Bottle</button>
-        <button>Jar</button>
-    </div>
-    <div class="cards-container"></div>
-    <!-- End -->
-    <!-- Footer -->
+    <div class="product-detail">
+        <div class="product-image">
+            <img id="product-img" src="" alt="">
+        </div>
 
+        <div class="product-info">
+            <h1 id="product-name"></h1>
+            <p id="product-category"></p>
+            <p id="product-capacity"></p>
+            <h2 id="product-price"></h2>
+            <p id="product-description"></p>
+
+            <button>ADD To Cart</button>
+        </div>
+    </div>
     <!-- Footer -->
 
     <footer class="footer">
@@ -103,9 +94,10 @@
         <div class="footer-top">
             <!-- About / Brand -->
             <div class="footer-about">
-                <h3>NESTRO</h3>
+                <h3>PETBOT</h3>
                 <p>
-                    Your one-stop shop for bottles, jars, and more. Quality products for
+                    Your one-stop shop for bottles, jars, and more. Quality products
+                    for
                     everyday use.
                 </p>
             </div>
@@ -114,30 +106,19 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product-detail.html">Products</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
 
             <!-- Contact Info -->
             <div class="footer-contact">
                 <h4>Contact Us</h4>
-                <p>511, Suite # 202-203, Main Shahra-e-Faisal, near Lal Kothi (house), Karachi, Pakistan</p>
-                <p>Phone: +92 301 7565441</p>
-                <p>Email: nestro@gmail.com</p>
-            </div>
-            <div class="socials">
-                <a href="https://facebook.com" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
+                <p>123 Bottle Street, Karachi, Pakistan</p>
+                <p>Phone: +92 300 1234567</p>
+                <p>Email: info@bottleshop.com</p>
             </div>
         </div>
 
@@ -146,13 +127,18 @@
         <!-- Footer Bottom -->
         <div class="footer-bottom">
             <p>&copy; 2026 PETBOT. All rights reserved.</p>
-
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
         </div>
     </footer>
 
+    <!-- End -->
 
     <script src="./js/script.js"></script>
-    <!-- <script src="./js/product-detail.js"></script> -->
+    <script src="./js/product-detail.js"></script>
 </body>
 
 </html>

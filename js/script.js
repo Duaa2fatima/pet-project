@@ -172,18 +172,24 @@ fetch("./data/products.json")
 fetch("./data/gallery.json")
   .then(res => res.json())
   .then(data => {
-    let imageHTML = "";
+    const topRow = document.querySelector(".top-row");
+    const bottomRow = document.querySelector(".bottom-row");
 
-    data.forEach(element => {
-      imageHTML += `
+    if (!topRow || !bottomRow) return;
+
+    const half = Math.ceil(data.length / 2);
+    const topImages = data.slice(0, half);
+    const bottomImages = data.slice(half);
+
+    const createImages = (images) =>
+      images.map(img => `
         <div class="gallery-img">
-          <img src="${element.item}" alt="Gallery Image">
+          <img src="${img.item}" alt="Gallery Image">
         </div>
-      `;
-    });
+      `).join("");
 
-    const galleryContainer = document.querySelector(".gallery-container");
-    if (galleryContainer) galleryContainer.innerHTML = imageHTML;
+    topRow.innerHTML = createImages(topImages) + createImages(topImages);
+    bottomRow.innerHTML = createImages(bottomImages) + createImages(bottomImages);
   })
   .catch(err => console.error("Gallery error:", err));
 
@@ -208,6 +214,3 @@ if (contact) {
     // contact.reset();
   });
 }
-
-
-
