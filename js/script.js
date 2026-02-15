@@ -60,6 +60,7 @@ if (category_filter_btn.length > 0 && container) {
                       <p>${item.category}</p>
                       <p>RS/- ${item.price}</p>
                     </div>
+                     
                   </div>
                 </div>
               </a>
@@ -74,6 +75,7 @@ if (category_filter_btn.length > 0 && container) {
 }
 
 // ================= LOAD ALL PRODUCTS (DEFAULT) =================
+
 fetch("./data/products.json")
   .then(res => res.json())
   .then(data => {
@@ -81,28 +83,39 @@ fetch("./data/products.json")
 
     data.forEach(element => {
       html += `
-        <a href="./product-detail.html?id=${element.id}">
-          <div class="card">
+        <div class="card">
+
+          <a href="./product-detail.html?id=${element.id}" class="card-link">
             <div class="card-banner">
-              <img src="${element.img}" alt="">
+              <img src="${element.img}" alt="${element.name}">
             </div>
-            <div class="card-text">
-              <div>
-                <h3>${element.name}</h3>
-                <p>${element.capacity}</p>
-              </div>
-              <div>
-                <p>${element.category}</p>
-                <p>RS/- ${element.price}</p>
-              </div>
+          </a>
+
+          <div class="card-text">
+            <div class="card-top">
+              <h3>${element.name}</h3>
+              <p>${element.capacity}</p>
+            </div>
+
+            <div class="card-middle">
+              <p class="category">${element.category}</p>
+              <p class="price">RS/- ${element.price}</p>
+            </div>
+
+            <div class="card-bottom">
+              <a href="${element.pdf}" download class="download-btn">
+                Product Details
+              </a>
             </div>
           </div>
-        </a>
+
+        </div>
       `;
     });
 
     if (container) container.innerHTML = html;
   });
+
 
 
 
@@ -129,6 +142,7 @@ fetch("./data/products.json")
                     <p>${element.category}</p>
                     <p>RS/- ${element.price}</p>
                 </div>
+               
                 </div>
             </div>
             </a>
@@ -159,6 +173,7 @@ fetch("./data/products.json")
                     <p>${element.category}</p>
                     <p>RS/- ${element.price}</p>
                 </div>
+                
                 </div>
             </div>
             </a>

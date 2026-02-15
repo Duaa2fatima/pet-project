@@ -7,6 +7,7 @@
         "capacity": "1 Liter",
         "usage": "Water",
         "price": 65.00,
+        "pdf": "./pdf/Square plastic bottel.pdf",
         "img": "./images/5.jpeg"
     },
     {
@@ -17,6 +18,7 @@
         "capacity": "1000 ml",
         "usage": "Juice",
         "price": 225.00,
+        "pdf": "./pdf/Litre Glass bottel.pdf",
         "img": "./images/6.jpeg"
     },
     {
@@ -27,6 +29,7 @@
         "capacity": "290 ml",
         "usage": "Hot & Cold Drinks",
         "price": 135.00,
+        "pdf": "./pdf/Glass Sauce bottle.pdf",
         "img": "./images/7.jpeg"
     },
     {
@@ -37,6 +40,7 @@
         "capacity": "100 ml",
         "usage": "Gym & Fitness",
         "price": 45.00,
+        "pdf": "./pdf/cosmetics Plastic bottle (flip top).pdf",
         "img": "./images/8.jpeg"
     },
     {
@@ -47,6 +51,7 @@
         "capacity": "100 ml",
         "usage": "Hot Beverages",
         "price": 69.00,
+        "pdf": "./pdf/Mist Spray Plastic Bottle.pdf",
         "img": "./images/9.jpeg"
     },
     {
@@ -57,6 +62,7 @@
         "capacity": "200 ml",
         "usage": "Food Storage",
         "price": 130.00,
+        "pdf": "./pdf/Hexagon Glass Jar for Honey.pdf",
         "img": "./images/10.jpeg"
     },
     {
@@ -67,6 +73,7 @@
         "capacity": "370 ml",
         "usage": "Use our plastic jars as drawe orginizer, for selling and storing scrubs, seasoning, storing spices, salt, pepper, herbs, sugar, powders, dry fruits and more.",
         "price": 69.00,
+        "pdf": "./pdf/Round plastic jar.pdf",
         "img": "./images/11.jpeg"
     },
     {
@@ -77,6 +84,7 @@
         "capacity": "60 ml",
         "usage": "Pharmaceutical",
         "price": 20.00,
+        "pdf": "./pdf/Mini Plastic Zam Zam Bottle.pdf",
         "img": "./images/12.jpeg"
     },
     {
@@ -87,6 +95,7 @@
         "capacity": "250 ml",
         "usage": "Fragrance",
         "price": 37.00,
+        "pdf": "./pdf/Special Plastic Bottle.pdf",
         "img": "./images/13.jpeg"
     },
     {
@@ -97,6 +106,7 @@
         "capacity": "250 ml",
         "usage": "Kitchen Spices",
         "price": 350,
+        "pdf": "./pdf/Shaker Spice Jars.pdf",
         "img": "./images/14.jpeg"
     }
 ]
